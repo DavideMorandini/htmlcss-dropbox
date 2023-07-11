@@ -11,7 +11,7 @@ body {
 
 /* header */
 div.row_nav {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: auto; 
     background-color: #ffffff;
@@ -62,7 +62,7 @@ ul.elenco_header {
 
 li.li_header {
     /* border: 1px solid purple; */
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 0.625rem);
     height: auto;
     display: flex;
     flex-direction: row;
@@ -216,17 +216,17 @@ div.r_m_n2 {
 }
 
 div.col_long {
-    border: 1px solid #d0d0d3;
-    width: calc(100% / 3 - 100px);
-    height: 930px;
+    border: 0.0625rem solid #d0d0d3;
+    width: calc(100% / 3 - 6.25rem);
+    height: 58.125rem;
     margin: 0rem 3.125rem;
     padding: 0rem 1.25rem;
 }
 
 div.card_singolo {
-    border-bottom: 1px solid #d0d0d3;
+    border-bottom: 0.0625rem solid #d0d0d3;
     width: 100%;
-    height: 30px; /* auto */
+    height: 1.875rem; 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -235,7 +235,7 @@ div.card_singolo {
 
 i.fa-solid {
     /* border: 1px solid green; */
-    font-size: 14px;
+    font-size: 0.875rem;
     width: auto;
     height: auto;
     margin: 0rem 0.3125rem 0rem 0rem;
@@ -287,7 +287,7 @@ div.symbol {
 .but_col_long {
     /* border: 1px solid red; */
     width: auto;
-    margin: 50px 0px 40px 0px;
+    margin: 3.125rem 0rem 2.5rem 0rem;
 }
 
 div.acquista_ora {
@@ -316,25 +316,25 @@ i.fa-check {
 div.row_horiz {
     /* border: 1px solid blue; */
     width: 80%;
-    height: 300px; /* auto */
-    margin: 40px auto;
+    height: auto; 
+    margin: 2.5rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 div.col_horiz {
-    border: 1px solid #d0d0d3;
-    width: calc(100% / 1 - 100px);
-    height: 200px; /* auto */
+    border: 0.0625rem solid #d0d0d3;
+    width: calc(100% / 1 - 6.25rem);
+    height: auto;
     margin: 0rem 3.125rem;
     padding: 0rem 1.25rem;
 }
 
 div.card_team {
-    border-bottom: 1px solid #d0d0d3;
+    border-bottom: 0.0625rem solid #d0d0d3;
     width: 100%;
-    height: 30px; /* auto */
+    height: 1.875rem; 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -355,18 +355,18 @@ div.col_horiz_left {
 }
 
 div.last_info_offer {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 div.la_in_on1 {
     /* border: 1px solid blue; */
-    padding: 10px 0px;
+    padding: 0.625rem 0rem;
 }
 
 div.la_in_on2 {
     /* border: 1px solid blue; */
-    padding: 10px 0px;
-    margin-top: 30px;
+    padding: 0.625rem 0rem;
+    margin-top: 1.875rem;
 }
 
 div.col_horiz_right {
@@ -392,7 +392,7 @@ div.col_horiz_right {
     /* border: 1px solid blue; */
     width: 80%;
     height: auto;  
-    margin: 100px auto;
+    margin: 6.25rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -421,19 +421,19 @@ div.col_entra_in_contatto {
     /* border: 1px solid violet; */
     width: calc(100% - 70%);
     height: auto;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 h3.title_top {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 p.middle_para {
-    padding: 30px 0px;
+    padding: 1.875rem 0rem;
 }
 
 div.but_partner {
-    border: 1px solid #656565;
+    border: 0.0625rem solid #656565;
     width: 50%;
     height: auto;
     text-align: center;
@@ -443,7 +443,7 @@ a.link_trova_un_partner {
     text-decoration: none;
     color: black;
     display: inline-block;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 
@@ -465,23 +465,23 @@ a.link_trova_un_partner {
 }
 
 h2.esegui_operazioni {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 div.r_m_n3 {
     /* border: 1px solid violet; */
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 div.col_series {
     /* border: 1px solid red; */
-    width: calc(100% / 3 - 60px);
+    width: calc(100% / 3 - 3.75rem);
     height: auto;
-    margin: 30px 0px;
+    margin: 1.875rem 0rem;
 }
 
 div.card_group {
@@ -498,8 +498,8 @@ div.card_group {
 }
 
 h4.passa_di_meno {
-    font-size: 25px;
-    padding: 20px 0px;
+    font-size: 1.5625rem;
+    padding: 1.25rem 0rem;
 }
 
 /* Fifth section */
@@ -519,16 +519,16 @@ h4.passa_di_meno {
 
 h2.più_di_5 {
     width: 50%;
-    font-size: 40px;
-    margin-top: 200px;
-    margin-bottom: 80px;
+    font-size: 2.5rem;
+    margin-top: 12.5rem;
+    margin-bottom: 5rem;
 }
 
 .scopri_di_più {
     /* border: 1px solid black; */
     color: blue;
     display: inline-block;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 
 
@@ -574,7 +574,7 @@ div.card_square {
 }
 
 div.cs_n1 {
-    border: 10px solid #d1e9cd;
+    border: 0.625rem solid #d1e9cd;
     background-color: #a2d39b;
 }
 
@@ -621,29 +621,29 @@ div.big_square {
 div.designit {
     filter: invert(1);
     width: 90%;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 hr.hr_under_designit {
     width: 20%;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 blockquote {
     /* border: 1px solid black; */
-    padding: 0px 30px;
+    padding: 0rem 1.875rem;
 }
 
 span.lead_IT {
     /* border: 1px solid black; */
     display: inline-block;
-    margin: 40px 30px;
+    margin: 2.5rem 1.875rem;
 }
 
 .row_sec_n6b {
     /* border: 1px solid blue; */
     width: 100%;
-    height: 300px; /* auto */
+    height: auto;
     background-color:  #b4d0e7;
     display: flex;
     flex-direction: row;
@@ -655,6 +655,7 @@ div.title_but {
     /* border: 1px solid black; */
     width: 80%;
     height: auto;
+    margin: 6.25rem 0rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -663,7 +664,7 @@ div.title_but {
 h2.porta_dropbox {
     /* border: 1px solid black; */
     width: calc(100% / 2);
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #61082b;
 }
 
@@ -692,7 +693,7 @@ a.inizia_la_prova {
     width: 100%;
     height: auto; 
     background-color:#ffffff;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 
 .row_sec_n7 {
@@ -707,20 +708,20 @@ a.inizia_la_prova {
 
 h2.FAQ {
     /* border: 1px solid black; */
-    font-size: 40px;
-    padding: 100px 0px 40px 0px;
+    font-size: 2.5rem;
+    padding: 6.25rem 0rem 2.5rem 0rem;
     font-weight: normal;
 }
 
 div.differenze {
-    border: 1px solid;
+    border: 0.0625rem solid;
     border-top-color: #d2d2d2;
     border-right-color: transparent;
     border-bottom-color: #d2d2d2;
     border-left-color: transparent;
     width: auto;
-    height: auto; /* auto */
-    padding: 30px 30px 30px 0px;
+    height: auto;
+    padding: 1.875rem 1.875rem 1.875rem 0rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -747,11 +748,11 @@ div.col_footer {
     /* border: 1px solid red; */
     width: calc(100% / 5);
     height: auto; 
-    margin: 100px 0px;
+    margin: 6.25rem 0rem;
 }
 
 h4.titles_footer {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: white;
 }
 
@@ -760,14 +761,14 @@ ul.elenco_footer {
     width: auto;
     height: auto;
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 li.li_footer {
     /* border: 1px solid purple; */
     width: 100%;
     height: auto;
-    margin: 10px 0px;
+    margin: 0.625rem 0rem;
 }
 
 a.link_footer {
@@ -786,9 +787,9 @@ div.row_footer_down {
 }
 
 div.language {
-    border-top: 1px solid white;
-    padding: 40px 0px;
+    border-top: 0.0625rem solid white;
+    height: auto;
+    padding: 2.5rem 0rem;
     width: 10%;
-    height: 50px;/* auto */
     color: #566a79;
 }
