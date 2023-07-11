@@ -72,10 +72,18 @@ li {
     margin: 0rem 0.3125rem;
 }
 
-a.link_header {
+a.link_header, .link_header_special {
     text-decoration: none;
     font-size: 0.875rem;
     color: #868686;
+}
+
+li.special {
+    background-color: #0061ff;
+}
+
+a.link_header_special {
+    color: white;
 }
 
 div.first_col_right {
@@ -83,6 +91,14 @@ div.first_col_right {
     flex-direction: row;
     justify-content: flex-end;
 }
+
+
+
+
+
+
+
+
 
 /* main */
 .sec_n1 {
@@ -93,8 +109,8 @@ div.first_col_right {
 }
 
 div.row_sec_n1 {
-    border: 1px solid red;
-    width: 70%;
+    /* border: 1px solid red; */
+    width: 80%;
     height: auto; 
     margin: 0 auto;
 }
@@ -106,7 +122,7 @@ h1 {
 }
 
 div.row_minor {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     width: 100%;
     height: auto; 
     display: flex;
@@ -131,14 +147,24 @@ p, .annulla {
     color: black;
 }
 
-.but_first_sec {
+.but_first_sec, .but_col_long  {
+    /* border: 1px solid blue; */
+    width: 60%;
+    background-color: #0061ff;
+    text-align: center;
+    padding: 0.625rem;
     margin: 1.875rem 0rem;
 }
 
-i {
-    /* border: 1px solid blue; */
+a.prova_gratuita, .ufficio_vendite {
+    text-decoration: none;
+    color: white;
+}
+
+span.arrow_down {
+    display: inline-block;
     font-size: 2.5rem;
-    margin: 3.75rem 0rem;
+    margin: 1.5rem 0rem;
 }
 
 div.card {
@@ -154,29 +180,34 @@ div.card {
     object-fit: cover;
 }
 
+
+
+
+
+/* Second section */
 .sec_n2 {
     border: 1px solid black;
     width: 100%;
-    height: 1200px; /* auto */
+    height: auto; 
     background-color:#ffffff; 
 }
 
 .row_sec_n2 {
     border: 1px solid blue;
-    width: 70%;
-    height: 1100px; /* auto */
+    width: 80%;
+    height: auto; 
     margin: 0 auto;
 }
 
-h2 {
-    border: 1px solid green;
+h2.piano_business {
+    /* border: 1px solid green; */
     width: auto;
     font-size: 1.875rem;
-    margin: 6.25rem 0rem 3.125rem 4.375rem;
+    margin: 8.25rem 0rem 3.125rem 4.375rem;
 }
 
 .first_choise, .second_choise {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 20%;
     display: inline-block; 
     margin: 0rem -3.125rem 2.5rem 4.375rem;
@@ -185,14 +216,15 @@ h2 {
 div.r_m_n2 {
     border: 1px solid violet;
     width: 100%;
-    height: 51.25rem;
+    height: auto;
+    justify-content: space-around;
 }
 
 div.col_long {
     border: 1px solid #d0d0d3;
-    width: 30%;
-    height: 800px; /* auto */
-    margin: 0rem 4.375rem;
+    width: calc(100% / 3 - 100px);
+    height: 930px;
+    margin: 0rem 3.125rem;
     padding: 0rem 1.25rem;
 }
 
@@ -207,7 +239,7 @@ div.card_singolo {
 }
 
 i.fa-solid {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-size: 14px;
     width: auto;
     height: auto;
@@ -221,17 +253,17 @@ span.singolo {
 div.offer {
     border: 1px solid green;
     width: auto;
-    height: 700px; /* auto */ 
+    height: auto;
 }
 
 h3 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-size: 1.25rem;
     padding: 0.625rem 0rem;
 }
 
 div.price_tag span {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: block;
     padding: 0.625rem 0rem;
     font-size: 0.75rem;
@@ -257,18 +289,16 @@ div.symbol {
     justify-content: flex-start;
 }
 
-span.sentence {
-    border: 1px solid purple;
-}
-
 .but_col_long {
-    margin: 1.875rem 0rem;
+    /* border: 1px solid red; */
+    width: auto;
+    margin: 50px 0px 40px 0px;
 }
 
 div.acquista_ora {
-    width: auto;
     border: 1px solid purple;
-    margin-bottom: 1.875rem;
+    width: auto;
+    margin-bottom: 2.5rem;
 }
 
 hr {
@@ -276,7 +306,7 @@ hr {
 }
 
 h5 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 3.125rem 0rem 1.875rem 0rem;
 }
 
@@ -286,7 +316,356 @@ i.fa-check {
 }
 
 
+/* Last horizontal  */
+div.row_horiz {
+    border: 1px solid blue;
+    width: 80%;
+    height: 300px; /* auto */
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+div.col_horiz {
+    border: 1px solid #d0d0d3;
+    width: calc(100% / 1 - 100px);
+    height: 200px; /* auto */
+    margin: 0rem 3.125rem;
+    padding: 0rem 1.25rem;
+}
+
+div.card_team {
+    border-bottom: 1px solid #d0d0d3;
+    width: 100%;
+    height: 30px; /* auto */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.last_offer {
+    /* border: 1px solid green; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.col_horiz_left {
+    /* border: 1px solid blue; */
+}
+
+div.last_info_offer {
+    font-size: 14px;
+}
+
+div.la_in_on1 {
+    /* border: 1px solid blue; */
+    padding: 10px 0px;
+}
+
+div.la_in_on2 {
+    /* border: 1px solid blue; */
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+div.col_horiz_right {
+    /* border: 1px solid blue; */
+    width: 20%;
+    background-color: #0061ff;
+    text-align: center;
+    padding: 0.625rem; 
+    margin: 0rem 0rem 6.5625rem 0rem;
+}
+
+
+
+
+
+/* Third section */
+.sec_n3 {
+    border: 1px solid black;
+    width: 100%;
+    height: auto; 
+    background-color:#ffffff; 
+}
+
+.row_sec_n3 {
+    border: 1px solid blue;
+    width: 80%;
+    height: auto;  
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.col_right_people {
+    border: 1px solid red;
+    width: 70%;
+    height: auto;
+}
+
+div.card_people {
+    border: 1px solid orange;
+    width: 100%;
+    height: auto;
+}
+
+.second_img {
+    /* border: 1px solid green; */
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+div.col_entra_in_contatto {
+    border: 1px solid violet;
+    width: calc(100% - 70%);
+    height: auto;
+    padding: 30px;
+}
+
+h3.title_top {
+    font-size: 25px;
+}
+
+p.middle_para {
+    padding: 30px 0px;
+}
+
+div.but_partner {
+    border: 1px solid #656565;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+a.link_trova_un_partner {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+
+/* Fourth section */
+.sec_n4 {
+    border: 1px solid black;
+    width: 100%;
+    height: auto; 
+    background-color:#ffffff; 
+}
+
+.row_sec_n4 {
+    border: 1px solid blue;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h2.esegui_operazioni {
+    font-size: 40px;
+}
+
+div.r_m_n3 {
+    border: 1px solid violet;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.col_series {
+    border: 1px solid red;
+    width: calc(100% / 4);
+    height: auto;
+    margin: 30px 0px;
+}
+
+div.card_group {
+    border: 1px solid blue;
+    width: auto;
+    height: auto;
+}
+
+.img_group {
+    border: 1px solid green;
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+h4.passa_di_meno {
+    font-size: 25px;
+    padding: 20px 0px;
+}
+
+/* Fifth section */
+.sec_n5 {
+    border: 1px solid black;
+    width: 100%;
+    height: auto; 
+    background-color:#ffffff;
+}
+
+.row_sec_n5 {
+    border: 1px solid blue;
+    width: 80%;
+    height: 500px; /* auto */
+    margin: 0 auto;
+}
+
+h2.più_di_5 {
+    width: 50%;
+    font-size: 40px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.scopri_di_più {
+    color: blue;
+}
+
+/* Sixth section */
+.sec_n6 {
+    border: 1px solid black;
+    width: 100%;
+    height: auto; 
+    background-color:#ffffff;
+}
+
+.row_sec_n6a {
+    border: 1px solid blue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div.square {
+    border: 1px solid green;
+    width: calc(100% / 3);
+    aspect-ratio: 1;
+}
+
+div.little_row {
+    border: 1px solid red;
+    width: auto;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.card_square {
+    border: 1px solid red;
+    width: calc(100% / 2);
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.cs_n1 {
+    background-color: #a2d39b;
+}
+
+div.cs_n2 {
+    background-color: #61082b;
+}
+
+div.cs_n3 {
+    background-color: #0093ce;
+}
+
+div.cs_n4 {
+    background-color: #ff1c1c;
+}
+
+div.cs_n5 {
+    background-color: #d5001f;
+}
+
+div.cs_n6 {
+    background-color: #b4d0e7;
+}
+
+div.cs_n7 {
+    background-color: #0d2481;
+}
+
+div.cs_n8 {
+    background-color: #ffd830;
+}
+
+.img_square {
+    border: 1px solid red;
+    max-width: 80%;
+    height: auto; 
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row_sec_n6b {
+    border: 1px solid blue;
+    width: 100%;
+    height: 500px; /* auto */
+    background-color:  #b4d0e7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title_but {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2.porta_dropbox {
+    /* border: 1px solid black; */
+    width: calc(100% / 2);
+    font-size: 40px;
+    color: #61082b;
+}
+
+div.but_la_prova {
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: white;
+}
+
+a.inizia_la_prova {
+    text-decoration: none;
+    color: black;
+}
 
 
 
