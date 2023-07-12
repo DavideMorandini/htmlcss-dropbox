@@ -10,8 +10,13 @@ body {
 }
 
 /* header */
+header {
+    position: sticky;
+    top: 0;
+}
+
 div.row_nav {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100%;
     height: auto; 
     background-color: #ffffff;
@@ -23,7 +28,7 @@ div.row_nav {
 }
 
 div.col_header {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 40%;
     height: auto; 
     display: flex;
@@ -50,7 +55,7 @@ div.box_image {
 }
 
 ul.elenco_header {
-    /* border: 1px solid violet; */
+    border: 1px solid violet;
     width: 70%;
     height: auto;
     list-style-type: none;
@@ -61,7 +66,7 @@ ul.elenco_header {
 }
 
 li.li_header {
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
     width: calc(100% / 3 - 0.625rem);
     height: auto;
     display: flex;
@@ -94,6 +99,11 @@ div.first_col_right {
     flex-direction: row;
     justify-content: flex-end;
 }
+
+.opacity:hover {
+    opacity: 0.5;
+}
+
 
 
 
@@ -219,8 +229,6 @@ div.col_long {
     border: 0.0625rem solid #d0d0d3;
     width: calc(100% / 3 - 6.25rem);
     height: 58.125rem;
-    margin: 0rem 3.125rem;
-    padding: 0rem 1.25rem;
 }
 
 div.card_singolo {
@@ -249,6 +257,7 @@ div.offer {
     /* border: 1px solid green; */
     width: auto;
     height: auto;
+    padding: 1.875rem 1.875rem;
 }
 
 h3 {
@@ -327,8 +336,6 @@ div.col_horiz {
     border: 0.0625rem solid #d0d0d3;
     width: calc(100% / 1 - 6.25rem);
     height: auto;
-    margin: 0rem 3.125rem;
-    padding: 0rem 1.25rem;
 }
 
 div.card_team {
@@ -345,6 +352,7 @@ div.last_offer {
     /* border: 1px solid green; */
     width: auto;
     height: auto;
+    padding: 1.875rem 1.875rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -687,6 +695,8 @@ a.inizia_la_prova {
 
 
 
+
+
 /* Seventh section */
 .sec_n7 {
     /* border: 1px solid black; */
@@ -722,11 +732,27 @@ div.differenze {
     width: auto;
     height: auto;
     padding: 1.875rem 1.875rem 1.875rem 0rem;
+}
+
+h4.question {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
+
+div.differenze p {
+    display: none;
+}
+
+div.differenze:hover p {
+    display: block;
+}
+
+div.differenze:hover i {
+    transform: rotate(180deg);
+}
+
 
 
 
